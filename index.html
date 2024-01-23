@@ -31,8 +31,8 @@
     <header class="mx-auto">
         <!-- nav section -->
         <nav class="relative lg:flex justify-around items-center">
-                <div class="flex justify-around mt-3 lg:flex flex-row items-center">
-                    <div class="flex items-center">
+                <div class="flex justify-around lg:flex flex-row items-center">
+                    <div class="flex items-center lg:mt-0">
                         <div class="pt-1 lg:invisible">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -51,7 +51,7 @@
                         <li>Contacts</li>
                     </ul>
                 </div>
-                <div class="lg:flex flex-row items-center space-x-4 mt-4">
+                <div class="lg:flex flex-row items-center space-x-4">
                     <div class="invisible lg:visible">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -63,7 +63,36 @@
                 </div>
         </nav>
         <!-- slider section -->
-        
+        <div class="carousel w-full max-h-svh lg:mt-6">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/R.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- floating banner large screen -->
+            <div class="lg:absolute bg-black font-manrope p-8 rounded-xl mt-52 ml-96 top-80 left-80">
+                <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-xs text-[#FFFFFF] opacity-60 font-bold mt-4">Certain sports which share general characteristics with the forms of hockey, 
+                <br>but are not generally referred to as hockey include lacrosse, hurling, camogie and shinty.</p>
+            </div>
+            <!-- floating banner small screen -->
+            <div class="absolute bg-black font-manrope p-8 rounded-xl top-96 mt-80 lg:invisible">
+                <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-xs text-[#FFFFFF] opacity-60 font-bold mt-4">Certain sports which share general characteristics with the forms of hockey, 
+                <br>but are not generally referred to as hockey include lacrosse, hurling, camogie and shinty.</p>
+            </div>
+          </div>
     </header>
     <main>
 
