@@ -25,6 +25,19 @@
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
+        /* radial progress section style */
+        #ring-1{
+            color: #FF4240;
+        }
+        #ring-2{
+            color: #49D293;
+        }
+        #ring-3{
+            color: #FFB546;
+        }
+        #ring-4{
+            color: #4C8DF1;
+        }
       </style>      
 </head>
 <body class="container mx-auto">
@@ -86,16 +99,57 @@
                 <p class="text-xs text-[#FFFFFF] opacity-60 font-bold mt-4">Certain sports which share general characteristics with the forms of hockey, 
                 <br>but are not generally referred to as hockey include lacrosse, hurling, camogie and shinty.</p>
             </div>
-            <!-- floating banner small screen -->
-            <div class="absolute bg-black font-manrope p-8 rounded-xl top-96 mt-80 lg:invisible">
-                <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
-                <p class="text-xs text-[#FFFFFF] opacity-60 font-bold mt-4">Certain sports which share general characteristics with the forms of hockey, 
-                <br>but are not generally referred to as hockey include lacrosse, hurling, camogie and shinty.</p>
-            </div>
-          </div>
+        </div>
+        <!-- floating banner small screen -->
+        <div class="bg-black font-manrope p-8 rounded-xl lg:invisible">
+            <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+            <p class="text-xs text-[#FFFFFF] opacity-60 font-bold mt-4">Certain sports which share general characteristics with the forms of hockey, 
+            <br>but are not generally referred to as hockey include lacrosse, hurling, camogie and shinty.</p>
+        </div>
     </header>
     <main>
-
+        <!-- professionals hockey club -->
+        <section class="mt-4">
+            <hr class="border-dotted mb-6">
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h3>
+                <p class="text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
+            </div>
+            <hr class="border-dotted mt-8 mb-12">
+        </section>
+        <!-- radial progress -->
+        <section class="grid grid-cols-1 lg:flex justify-around">
+            <div class="flex flex-col text-center items-center mb-4">
+                <div id="ring-1" class="radial-progress mb-2" style="--value:87;" role="progressbar">87%</div>
+                <h5 class="text-xl font-bold mb-2">Prayer Facility</h5>
+                <p class="text-xs font-normal">Prayer warriors needed Mason is a Mandan<br>Hockey Club player </p>
+            </div>
+            <div class="flex flex-col text-center items-center mb-4">
+                <div id="ring-2" class="radial-progress mb-2" style="--value:95;" role="progressbar">95%</div>
+                <h5 class="text-xl font-bold mb-2">Experienced Coach</h5>
+                <p class="text-xs font-normal">Fulfilling the duties and responsibilities of a hockey coach<br>requires attention to detail</p>
+            </div>
+            <div class="flex flex-col text-center items-center mb-4">
+                <div id="ring-3" class="radial-progress mb-2" style="--value:90;" role="progressbar">90%</div>
+                <h5 class="text-xl font-bold mb-2">Senior Player</h5>
+                <p class="text-xs font-normal">What is senior hockey?
+                    Senior hockey refers to amateur<br> or semi-professional ice hockey competition</p>
+            </div>
+            <div class="flex flex-col text-center items-center mb-4">
+                <div id="ring-4" class="radial-progress mb-2" style="--value:80;" role="progressbar">80%</div>
+                <h5 class="text-xl font-bold mb-2">Training Ground</h5>
+                <p class="text-xs font-normal">You can create your own ice hockey <br>dryland training area at home</p>
+            </div>
+        </section>
+        <!-- Program Sections -->
+        <section class="mt-4">
+            <hr class="border-dotted mb-6">
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h3>
+                <p class="text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
+            </div>
+            <hr class="border-dotted mt-8 mb-12">
+        </section>
     </main>
     <footer>
 
