@@ -11,6 +11,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                
               }
             }
           }
@@ -25,6 +26,10 @@
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
+        .btn-primary{
+            background-color: #FF4240;
+        }
+    
         /* radial progress section style */
         #ring-1{
             color: #FF4240;
@@ -41,11 +46,11 @@
       </style>      
 </head>
 <body class="container mx-auto">
-    <header class="mx-auto">
+    <header>
         <!-- nav section -->
-        <nav class="relative lg:flex justify-around items-center">
+        <nav class="relative lg:flex justify-between items-center">
                 <div class="flex justify-around lg:flex flex-row items-center">
-                    <div class="flex items-center lg:mt-0">
+                    <div class="flex items-center">
                         <div class="pt-1 lg:invisible">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -53,7 +58,7 @@
                         </div>
                         <h2 class="font-extrabold text-4xl text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</h2>
                     </div>
-                    <button class="btn btn-primary text-white font-semibold mt-4 lg:invisible">Get Ticket</button>  
+                    <button class="btn btn-primary border-none text-white font-semibold mt-4 lg:invisible">Get Ticket</button>  
                 </div>
                 <div class="invisible lg:visible">
                     <ul class="flex flex-row space-x-11 text-xl font-normal">
@@ -71,7 +76,7 @@
                         </svg>
                     </div>
                     <div class="invisible lg:visible">
-                        <button class="btn btn-primary text-white font-semibold">Get Ticket</button>
+                        <button class="btn btn-primary text-white font-semibold border-none">Get Ticket</button>
                     </div>
                 </div>
         </nav>
@@ -113,9 +118,9 @@
             <hr class="border-dotted mb-6">
             <div class="text-center">
                 <h3 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h3>
-                <p class="text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
+                <p class="px-3 lg:text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
             </div>
-            <hr class="border-dotted mt-8 mb-12">
+            <hr class="mb-5 lg:border-dotted mt-8 lg:mb-10 ">
         </section>
         <!-- radial progress -->
         <section class="grid grid-cols-1 lg:flex justify-around">
@@ -145,11 +150,46 @@
         <section class="mt-4">
             <hr class="border-dotted mb-6">
             <div class="text-center">
-                <h3 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h3>
-                <p class="text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
+                <h3 class="text-4xl font-extrabold mb-5">Program Sections</h3>
+                <p class="px-4 lg:text-[#131318] opacity-80">A friendly, inclusive club, offering hockey for all, we welcome everyone from aspiring <br>internationals to social players or those who are new to the game. </p>
             </div>
             <hr class="border-dotted mt-8 mb-12">
         </section>
+        <!-- 3 cards -->
+        <div class="flex flex-col items-center px-4">
+                <div class="lg:flex flex-1 gap-6 mb-6">
+                    <div class="card w-auto mb-6 lg:w-[573px] h-[338px] bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                        <div class="card-body pt-24 pl-10">
+                          <h2 class="card-title font-extrabold text-2xl text-white">Junior Program</h2>
+                          <p class=" text-white font-medium text-xs">The IIHF World Junior Championship, sometimes referred <br>to as World Juniors, is an annual event organized</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary border-none mb-10 text-white text-xl font-bold">Register Now!</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card w-auto lg:w-[573px] h-[338px] bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                        <div class="card-body pt-24 pl-10">
+                          <h2 class="card-title font-extrabold text-2xl text-white">Teenager Program</h2>
+                          <p class=" text-white font-medium text-xs">The IIHF World Junior Championship, sometimes referred <br>to as World Juniors, is an annual event organized</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary border-none  text-white mb-10 text-xl font-bold">Register Now!</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-auto lg:w-[1170px] h-[450px] bg-base-100 shadow-xl image-full ">
+                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body pt-32 lg:pt-48 pl-10">
+                    <h2 class="card-title font-extrabold text-2xl text-white">Professional Program</h2>
+                    <p class=" text-white font-medium text-xs">The IIHF World Junior Championship, sometimes referred to as World Juniors,is an annual event organized <br>by the International Ice Hockey Federation (IIHF) for national under-20 ice hockey teams from around <br>the world. It is traditionally held in late December, ending in early January </p>
+                    <div class="card-actions justify-start">
+                        <button class="btn btn-primary border-none  text-white mb-10 text-xl font-bold">Register Now!</button>
+                    </div>
+                    </div>
+                </div>
+        </div>
     </main>
     <footer>
 
