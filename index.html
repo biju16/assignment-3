@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey world</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>      
 </head>
-<body>
-    
+<body class="container mx-auto">
+    <header class="mx-auto">
+        <!-- nav section -->
+        <nav class="relative lg:flex justify-around items-center">
+                <div class="flex justify-around mt-3 lg:flex flex-row items-center">
+                    <div class="flex items-center">
+                        <div class="pt-1 lg:invisible">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                            </svg>
+                        </div>
+                        <h2 class="font-extrabold text-4xl text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</h2>
+                    </div>
+                    <button class="btn btn-primary text-white font-semibold mt-4 lg:invisible">Get Ticket</button>  
+                </div>
+                <div class="invisible lg:visible">
+                    <ul class="flex flex-row space-x-11 text-xl font-normal">
+                        <li><span class="text-[#FF4240]">Home</span></li>
+                        <li>About</li>
+                        <li>Pages</li>
+                        <li>Blog</li>
+                        <li>Contacts</li>
+                    </ul>
+                </div>
+                <div class="lg:flex flex-row items-center space-x-4 mt-4">
+                    <div class="invisible lg:visible">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                    <div class="invisible lg:visible">
+                        <button class="btn btn-primary text-white font-semibold">Get Ticket</button>
+                    </div>
+                </div>
+        </nav>
+        <!-- slider section -->
+        
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
